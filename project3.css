@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+}
+
+.menu{
+	padding-bottom: 1em;
+	line-height: 5em;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Responsive layout - makes menu color*/
+@media (max-width: 991px) {
+	.menu {
+	  background-color: brown;
+	}
+}
+
+.leftlist {
+	display: flex;
+	flex-direction: row;
+}
+
+.rightlist {
+	display: flex;
+	flex-direction: row;
+}
+
+.browse {
+	margin-left: 2em;
+}
+
+.login {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.help {
+	margin-right: 2em;
+}
+
+main {
+  background-color: lightgreen;
+}
+
+/* Responsive layout - makes main color to white*/
+@media screen and (max-width: 992px) {
+	main {
+	  background-color: white;
+	 }
+  }
+
+.banner {
+	background-image: url("./Image/banner.png");
+	position: relative;
+	height: 20em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+/* Responsive layout - makes banner color- hidden*/
+@media (max-width: 992px) {
+	.banner {
+		background-image: none;
+		position: relative;
+		color: black;
+		height: 10em;
+		margin-left: -1em;
+	}
+  }
+
+h2{
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+
+h4{
+	position: absolute;
+	top: 5em;
+	left: 1em;
+}
+
+aside {
+	padding-left: 1em;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	padding-left: 1em;
+	}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 768px){
+	.flex-container {
+	  flex-direction: column;
+	}
+  }
+
+.flex-item{
+	width: 100%;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+	  
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+@media only screen and (min-width: 992px){
+	/* For desktop: */
+	  .col-1 {width: 8.33%;}
+	  .col-2 {width: 16.66%;}
+	  .col-3 {width: 25%;}
+	  .col-4 {width: 33.33%;}
+	  .col-5 {width: 41.66%;}
+	  .col-6 {width: 50%;}
+	  .col-7 {width: 58.33%;}
+	  .col-8 {width: 66.66%;}
+	  .col-9 {width: 75%;}
+	  .col-10 {width: 83.33%;}
+	  .col-11 {width: 91.66%;}
+	  .col-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/* For tablet: */
+	.col-s-1 {width: 8.33%;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-3 {width: 25%;}
+	.col-s-4 {width: 33.33%;}
+	.col-s-5 {width: 41.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-7 {width: 58.33%;}
+	.col-s-8 {width: 66.66%;}
+	.col-s-9 {width: 75%;}
+	.col-s-10 {width: 83.33%;}
+	.col-s-11 {width: 91.66%;}
+	.col-s-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 767px) {
+	/* For mobile phones: */
+	[class*="col-"] {
+	  width: 100%;
+	}
+  }
